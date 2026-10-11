@@ -18,8 +18,11 @@ Wynik całkowity: 183
 using namespace std;
 int main() {
 
-   float T;
-   int P,R;
+   float P;
+   int T;
+   float R;
+   
+  
 
    cout << "P = ";
    cin >> P;
@@ -30,9 +33,12 @@ int main() {
    cout << "R = ";
    cin >> R;
 
-   int I = (P * T * R )/100;
 
-   cout << "Wynik rzeczywisty: " << fixed << setprecision(2);
-   cout << "Wynik całkowity: " << static_cast<int>(I) << endl;
 
+cout << fixed << setprecision(2);
+cout << "Wynik rzeczywisty: " << (P * T * R )/100 << endl;
+
+cout << "Wynik całkowity: " << (int)(P * T * R )/100 << endl;
+
+return 0;
 }
